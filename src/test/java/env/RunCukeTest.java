@@ -8,9 +8,9 @@ import cucumber.api.junit.Cucumber;
 @RunWith(Cucumber.class)
 @CucumberOptions(
 		plugin = {
-			 "pretty", "html:target/cucumberHtmlReport",
-		     "html:target/cucumberHtmlReport.html",     //  for html result
-			 "pretty:target/cucumber-json-report.json"   // for json result
+			 "pretty", 
+			 "html:target/cucumberHtmlReport",
+		   	 "json:target/cucumber-json-report.json"  
 		     },
 		features = "classpath:features",
 		glue = {"info.seleniumcucumber.stepdefinitions",   // predefined step definitions package
