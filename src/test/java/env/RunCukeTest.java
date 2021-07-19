@@ -9,7 +9,7 @@ import cucumber.api.junit.Cucumber;
 @CucumberOptions(
 		plugin = {
 			 "pretty", "html:target/cucumberHtmlReport",
-		     "html:target/cucumberHtmlReport",     //  for html result
+		     "html:target/cucumberHtmlReport.html",     //  for html result
 			 "pretty:target/cucumber-json-report.json"   // for json result
 		     },
 		features = "classpath:features",
